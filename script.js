@@ -1,11 +1,11 @@
-var showList = []; //boş bir array aç
+var showList = []; 
 
 fetch("./tv-shows.json")
   .then((resp) => resp.json())
   .then((data) => {
-    //fetch ile listeye ulaş
-    showList = data; //bilgileri array e at
-    setTvShows(data); //fonk çağır array  parametresiyle
+    
+    showList = data;
+    setTvShows(data); 
   });
 
 function setTvShows(data) {
